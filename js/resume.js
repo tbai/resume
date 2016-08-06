@@ -155,13 +155,15 @@ educationHistory.push({
 /**********************************************************************************/
 // CERTIFICATIONS
 /**********************************************************************************/
-educationHistory.push({
+let certifications = [];
+certifications.push({
   name:      "Scrum Product Owner",                                    date: "2015",
   authority: "SCRUM ALLIANCE"
 });
 
 
 /**********************************************************************************/
+// You can stop here if you are only reading my resume from the code browser...
 /**********************************************************************************/
 /**********************************************************************************/
 /**********************************************************************************/
@@ -179,20 +181,21 @@ educationHistory.push({
     }
 
     function appendSubtitle(text){
-        appendRow(`<h4 class='no-margin'>${text}</h4><hr class='no-margin'><br>`);
+        appendRow(`<h3 class='no-margin'>${text}</h3><hr class='no-margin'><br>`);
     }
 
     // name and contact
     appendRow(`
         <h2 class="no-margin">${name}</h2>
-        <h5 >${grad}</h5>
+        <h5>${grad}</h5>
         <p>${contact.join(" | ")}</p>
+        <p>${summary}</p>
         <br>
     `);
 
     // work history
     appendSubtitle("Work History");
-    workHistory.forEach(job => {
+    workHistory.forEach((job, index) => {
         appendRow(`
             <div class="eight columns">
                 <h5 class="no-margin">${job.position}</h5>
@@ -203,13 +206,38 @@ educationHistory.push({
             </div>
         `);
         job.details.split("\n\n").forEach(p => appendRow(`<p>${p}</p>`));
-        appendRow(`<p>Technologies: <em>${job.technologies.join(',')}</em></p><br>`);
-
+        appendRow(`
+            <p>Technologies: <em>${job.technologies.join(', ')}</em></p>
+        `);
     });
 
     // education
     appendSubtitle("Education");
+    educationHistory.forEach(education => {
+        appendRow(`
+            <div class="eight columns">
+                <h5 class="no-margin">${education.title}</h5>
+                <p><a target="_blank" href="${education.university.link}">${education.university.name}</a></p>
+            </div>
+            <div class="four columns text-right">
+                <h5>${education.date.from} - ${education.date.to}</h5>
+            </div>
+        `);
+    });
 
+    // certifications
+    appendSubtitle("Certifications");
+    certifications.forEach(cert => {
+        appendRow(`
+            <div class="eight columns">
+                <h5 class="no-margin">${cert.name}</h5>
+                <p>${cert.authority}</p>
+            </div>
+            <div class="four columns text-right">
+                <h5>${cert.date}</h5>
+            </div>
+        `);
+    });
     
 
     

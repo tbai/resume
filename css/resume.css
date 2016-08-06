@@ -1,0 +1,14 @@
+main.container {
+    margin-top:4rem;
+}
+
+.small {
+    font-size:70%;
+}
+
+.text-right {
+    text-align:right;
+}
+.no-margin {
+    margin:0px;
+}

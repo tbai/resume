@@ -1,8 +1,8 @@
 /**
- * This is my personal resume, check the link below (control+click) if you prefer to 
- * read it in the website or if you need to print a copy.
+ * This is my personal resume, check the link below if you prefer to read it in the 
+ * website or if you need to print a copy.
  * 
- * @link https://tbai.github.io/resume/
+ * @link http://resume.tiagobai.com
  */
 
 /**********************************************************************************/
@@ -180,8 +180,8 @@ certifications.push({
         mainEl.appendChild(el);
     }
 
-    function appendSubtitle(text){
-        appendRow(`<h3 class='no-margin'>${text}</h3><hr class='no-margin'><br>`);
+    function appendSubtitle(text, classStr){
+        appendRow(`<br><h3 class='no-margin ${classStr?classStr:''}'>${text}</h3><hr class='no-margin'><br>`);
     }
 
     // name and contact
@@ -190,7 +190,6 @@ certifications.push({
         <h5>${grad}</h5>
         <p>${contact.join(" | ")}</p>
         <p>${summary}</p>
-        <br>
     `);
 
     // work history
@@ -208,11 +207,12 @@ certifications.push({
         job.details.split("\n\n").forEach(p => appendRow(`<p>${p}</p>`));
         appendRow(`
             <p>Technologies: <em>${job.technologies.join(', ')}</em></p>
+            ${index < workHistory.length-1 ? '<br>':''}
         `);
     });
 
     // education
-    appendSubtitle("Education");
+    appendSubtitle("Education", 'page-break');
     educationHistory.forEach(education => {
         appendRow(`
             <div class="eight columns">

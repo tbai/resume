@@ -12,3 +12,30 @@ main.container {
 .no-margin {
     margin:0px;
 }
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+
+@media print {
+    .page-break {
+        page-break-before: always;
+        margin-top: 4rem;
+    } 
+    body {
+        font-size:10px;
+        line-height: 1.2;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        margin-bottom: 1.2rem;
+    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 14px; }
+    h6 { font-size: 12px; }
+}
+
+

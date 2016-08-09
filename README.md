@@ -1,2 +1,2 @@
 # resume
-My personal resume
+My personal resume hosted at  http://resume.tiagobai.com

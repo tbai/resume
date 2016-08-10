@@ -8,9 +8,14 @@
 /**********************************************************************************/
 let name = "TIAGO XAVIER BAI"; 
 /**********************************************************************************/
-let grad = "Computer Engineer";
+let grad = "Software Designer V at HP Inc.";
 
-let contact = [ "Porto Alegre Brazil", "+55 51 92184663", "tiagoxbai@gmail.com" ];
+let contact = [ 
+    "Porto Alegre Brazil", "+55 51 92184663", "tiagoxbai@gmail.com"
+];
+let pages = [
+    "https://br.linkedin.com/in/tiagobai"
+];
 
 let summary = `
   Software Engineer specialized in Front End development.
@@ -181,6 +186,13 @@ certifications.push({
 
 (function buildHtml(){
 
+    function buildLinks(text){
+        let regex = /http(s)?\:[^\s]+/g;
+        return text.replace(regex, match => {
+            return `<a href="${match}" target="_blank">${match}</a>`;
+        });
+    }
+
     function appendRow(html){
         let mainEl = document.querySelector("main");
         let el = document.createElement("div");
@@ -199,7 +211,10 @@ certifications.push({
     appendRow(`
         <h2 class="no-margin">${name}</h2>
         <h5>${grad}</h5>
-        <p>${contact.join(" | ")}</p>
+        <p>
+            ${contact.map(buildLinks).join(" | ")}<br>
+            ${pages.map(buildLinks).join('<br>')}
+        </p>
         <p>${summary}</p>
     `);
 

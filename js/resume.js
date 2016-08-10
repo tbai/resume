@@ -15,7 +15,7 @@ let contact = [ "Porto Alegre Brazil", "+55 51 92184663", "tiagoxbai@gmail.com" 
 let summary = `
   Software Engineer specialized in Front End development.
   I work for HP since 2006 on R&D Projects, writing and designing advanced web
-  applications and cloud based systems. I am a fast and competent Front End
+  applications and cloud based systems. I am a fast and competent Full Stack
   developer with extensive experience on Web technologies and attention to user
   experience and design.
 `;

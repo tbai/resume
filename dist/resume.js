@@ -15,7 +15,7 @@ var grad = "Software Designer V at HP Inc.";
 var contact = ["Porto Alegre Brazil", "+55 51 92184663", "tiagoxbai@gmail.com"];
 var pages = ["https://br.linkedin.com/in/tiagobai"];
 
-var summary = "\n  I work for HP since 2006 on R&D Projects, writing and designing advanced web\n  applications and cloud-based systems. I am a fast and competent Full-Stack\n  developer with extensive experience on Web technologies and attention to user\n  experience and design.\n\n  I will be moving to Sydney around November with an 189 Visa and I am currently \n  looking for new opportunities as Front-End or Full-Stack developer.\n";
+var summary = "\n  I work for HP since 2006 on R&D Projects, writing and designing advanced web\n  applications and cloud-based systems. I'm a fast and competent Full-Stack\n  developer with extensive experience on Web technologies and attention to user\n  experience and design.\n\n  I will be moving to Sydney around November with an 189 Visa and I'm currently \n  looking for new opportunities as Front-End or Full-Stack developer.\n";
 
 /**********************************************************************************/
 // WORK HISTORY

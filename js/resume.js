@@ -20,7 +20,7 @@ let pages = [
 let summary = `
   Software Engineer specialized in Front End development.
   I work for HP since 2006 on R&D Projects, writing and designing advanced web
-  applications and cloud based systems. I am a fast and competent Full Stack
+  applications and cloud-based systems. I am a fast and competent Full Stack
   developer with extensive experience on Web technologies and attention to user
   experience and design.
 `;
@@ -44,7 +44,7 @@ workHistory.push({
     working at the HP SureSupply Auto-Delivery platform.
 
     I joined the project to assume the leadership of the Front End development.
-    My first assignment was to travel to Seattle to receive training at an UX
+    My first assignment was to travel to Seattle to receive training at a UX
     company that built the first prototype and mock-ups, after that the Front End
     development was transferred to my team at HP Brazil.
 

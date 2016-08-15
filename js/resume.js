@@ -18,11 +18,13 @@ let pages = [
 ];
 
 let summary = `
-  Software Engineer specialized in Front End development.
   I work for HP since 2006 on R&D Projects, writing and designing advanced web
-  applications and cloud-based systems. I am a fast and competent Full Stack
+  applications and cloud-based systems. I am a fast and competent Full-Stack
   developer with extensive experience on Web technologies and attention to user
   experience and design.
+
+  I will be moving to Sydney around November with an 189 Visa and I am currently 
+  looking for new opportunities as Front-End or Full-Stack developer.
 `;
 
 

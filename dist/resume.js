@@ -15,7 +15,7 @@ var grad = "Software Designer V at HP Inc.";
 var contact = ["Porto Alegre Brazil", "+55 51 92184663", "tiagoxbai@gmail.com"];
 var pages = ["https://br.linkedin.com/in/tiagobai"];
 
-var summary = "\n  Software Engineer specialized in Front End development.\n  I work for HP since 2006 on R&D Projects, writing and designing advanced web\n  applications and cloud based systems. I am a fast and competent Full Stack\n  developer with extensive experience on Web technologies and attention to user\n  experience and design.\n";
+var summary = "\n  Software Engineer specialized in Front End development.\n  I work for HP since 2006 on R&D Projects, writing and designing advanced web\n  applications and cloud-based systems. I am a fast and competent Full Stack\n  developer with extensive experience on Web technologies and attention to user\n  experience and design.\n";
 
 /**********************************************************************************/
 // WORK HISTORY
@@ -30,7 +30,7 @@ workHistory.push({
         link: "http://www.hp.com/"
     },
 
-    details: "\n    Project Manager and Front End Developer of the Brazil sub-team (10 members)\n    working at the HP SureSupply Auto-Delivery platform.\n\n    I joined the project to assume the leadership of the Front End development.\n    My first assignment was to travel to Seattle to receive training at an UX\n    company that built the first prototype and mock-ups, after that the Front End\n    development was transferred to my team at HP Brazil.\n\n    Today I am the Project Manager of the Brazilian team and I also work as a lead\n    Front End developer. We are now creating a set of new web applications using\n    Angular 2 in order to provide solutions for external partners.\n  ",
+    details: "\n    Project Manager and Front End Developer of the Brazil sub-team (10 members)\n    working at the HP SureSupply Auto-Delivery platform.\n\n    I joined the project to assume the leadership of the Front End development.\n    My first assignment was to travel to Seattle to receive training at a UX\n    company that built the first prototype and mock-ups, after that the Front End\n    development was transferred to my team at HP Brazil.\n\n    Today I am the Project Manager of the Brazilian team and I also work as a lead\n    Front End developer. We are now creating a set of new web applications using\n    Angular 2 in order to provide solutions for external partners.\n  ",
 
     technologies: ["Javascript", "Backbone", "Angular 2", "React.js", "Grunt/Gulp", "Karma", "Node.js", "Express", "C#", "TFS", "Git"]
 });

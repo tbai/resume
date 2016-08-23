@@ -42,16 +42,16 @@ workHistory.push({
   },  
 
   details: `
-    Project Manager and Front End Developer of the Brazil sub-team (10 members)
+    Project Manager and Front-End Developer of the Brazil sub-team (10 members)
     working at the HP SureSupply Auto-Delivery platform.
 
-    I joined the project to assume the leadership of the Front End development.
+    I joined the project to assume the leadership of the Front-End development.
     My first assignment was to travel to Seattle to receive training at a UX
-    company that built the first prototype and mock-ups, after that the Front End
+    company that built the first prototype and mock-ups, after that the Front-End
     development was transferred to my team at HP Brazil.
 
     Today I am the Project Manager of the Brazilian team and I also work as a lead
-    Front End developer. We are now creating a set of new web applications using
+    Front-End developer. We are now creating a set of new web applications using
     Angular 2 in order to provide solutions for external partners.
   `,
 
@@ -74,7 +74,7 @@ workHistory.push({
     access and print large-format documents using a tablet, smartphone, laptop, or
     printer touchscreen.
 
-    I was the main Front End developer and the technical leader of the development
+    I was the main Front-End developer and the technical leader of the development
     team. The project was owned by HP Barcelona where I had the opportunity to
     visit to transfer the technology to a new business unit. My team had around 4
     developers and we built the entire system from scratch since the investigation

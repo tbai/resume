@@ -30,7 +30,7 @@ workHistory.push({
         link: "http://www.hp.com/"
     },
 
-    details: "\n    Project Manager and Front End Developer of the Brazil sub-team (10 members)\n    working at the HP SureSupply Auto-Delivery platform.\n\n    I joined the project to assume the leadership of the Front End development.\n    My first assignment was to travel to Seattle to receive training at a UX\n    company that built the first prototype and mock-ups, after that the Front End\n    development was transferred to my team at HP Brazil.\n\n    Today I am the Project Manager of the Brazilian team and I also work as a lead\n    Front End developer. We are now creating a set of new web applications using\n    Angular 2 in order to provide solutions for external partners.\n  ",
+    details: "\n    Project Manager and Front-End Developer of the Brazil sub-team (10 members)\n    working at the HP SureSupply Auto-Delivery platform.\n\n    I joined the project to assume the leadership of the Front-End development.\n    My first assignment was to travel to Seattle to receive training at a UX\n    company that built the first prototype and mock-ups, after that the Front-End\n    development was transferred to my team at HP Brazil.\n\n    Today I am the Project Manager of the Brazilian team and I also work as a lead\n    Front-End developer. We are now creating a set of new web applications using\n    Angular 2 in order to provide solutions for external partners.\n  ",
 
     technologies: ["Javascript", "Backbone", "Angular 2", "React.js", "Grunt/Gulp", "Karma", "Node.js", "Express", "C#", "TFS", "Git"]
 });
@@ -43,7 +43,7 @@ workHistory.push({
         link: "http://www.tet.com.br/en/"
     },
 
-    details: "\n    Team leader and developer of a Web application designed to make it easy to\n    access and print large-format documents using a tablet, smartphone, laptop, or\n    printer touchscreen.\n\n    I was the main Front End developer and the technical leader of the development\n    team. The project was owned by HP Barcelona where I had the opportunity to\n    visit to transfer the technology to a new business unit. My team had around 4\n    developers and we built the entire system from scratch since the investigation\n    phase until it went to production using agile and continuous deployment\n    techniques.\n  ",
+    details: "\n    Team leader and developer of a Web application designed to make it easy to\n    access and print large-format documents using a tablet, smartphone, laptop, or\n    printer touchscreen.\n\n    I was the main Front-End developer and the technical leader of the development\n    team. The project was owned by HP Barcelona where I had the opportunity to\n    visit to transfer the technology to a new business unit. My team had around 4\n    developers and we built the entire system from scratch since the investigation\n    phase until it went to production using agile and continuous deployment\n    techniques.\n  ",
 
     technologies: ["Grails(Java, Groovy)", "Javascript", "Jenkins", "AWS", "Linux", "Git", "SVN"]
 });

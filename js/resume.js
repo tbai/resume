@@ -8,23 +8,35 @@
 /**********************************************************************************/
 let name = "TIAGO XAVIER BAI"; 
 /**********************************************************************************/
-let grad = "Software Designer V at HP Inc.";
+let job = "Full-Stack Software Engineer";
 
 let contact = [ 
-    "Porto Alegre Brazil", "+55 51 92184663", "tiagoxbai@gmail.com"
+    "Sydney Australia", "+61280068908", "tiagoxbai@gmail.com"
 ];
 let pages = [
-    "https://br.linkedin.com/in/tiagobai"
+    "https://au.linkedin.com/in/tiagobai"
 ];
 
 let summary = `
-  I work for HP since 2006 on R&D Projects, writing and designing advanced web
-  applications and cloud-based systems. I'm a fast and competent Full-Stack
-  developer with extensive experience on Web technologies and attention to user
-  experience and design.
+  I'm an experienced Full-Stack Engineer working with software development since 
+  2004.
 
-  I will be moving to Sydney around November with an 189 Visa and I'm currently 
-  looking for new opportunities as Front-End or Full-Stack developer.
+  I started my career working with C and C++ development for embedded devices, 
+  moved to Java building digital publishing solutions for HP R&D and, back in 2007, 
+  I created my first JavaScript single page web application. Since that time 
+  Front-End development and UX is a passion. I consider myself as a Full-Stack 
+  engineer though since I can and have worked on every end of constructing a web 
+  application, from AWS configuration to UX design and CSS polishing.
+
+  I'm also an experienced team leader and have worked as a technical leader on 
+  several projects at HP and even had to work as a Project Manager in my latest 
+  experience, although I'm proud to say that I never stopped writing code.
+`;
+
+let specialities = `
+    Javascript (Angular 2, Reactjs, Redux, karma, node.js, mongodb, express, grunt, 
+    backbone, marionette...), Java, C, C++, C#, Web Development (Grails, Django, 
+    .Net...),  Linux...
 `;
 
 
@@ -35,29 +47,47 @@ let workHistory = [];
 
 // HP Inc.
 workHistory.push({
-  position: "Software Designer V",        date: { from: "Nov 2012", to: "Present" },
+  position: "Lead Front-End Engineer",        date: { from: "Nov 2013", to: "Sep 2016" },
   company: {
     name:   "HP Inc.",
-    link:   "http://www.hp.com/"
+    link:   "http://www.hp.com/",
+    team:   "HP SureSupply AutoDelivery team"
   },  
 
   details: `
-    Project Manager and Front-End Developer of the Brazil sub-team (10 members)
-    working at the HP SureSupply Auto-Delivery platform.
+    Web application that works in partnership with cartridge suppliers to manage the 
+    ordering and delivery of ink and toner cartridges.
 
-    I joined the project to assume the leadership of the Front-End development.
-    My first assignment was to travel to Seattle to receive training at a UX
-    company that built the first prototype and mock-ups, after that the Front-End
-    development was transferred to my team at HP Brazil.
-
-    Today I am the Project Manager of the Brazilian team and I also work as a lead
-    Front-End developer. We are now creating a set of new web applications using
-    Angular 2 in order to provide solutions for external partners.
+    I acted as a Project Manager and Front-End developer of the Brazilian local team 
+    with 10 engineers working at the HP SureSupply Auto-Delivery platform. The project 
+    was sponsored by HP US and my team was responsible for the Front-End development, 
+    load/performance tests and automated tests using selenium.
   `,
 
   technologies: [
-    "Javascript", "Backbone", "Angular 2", "React.js", "Grunt/Gulp", "Karma",
-    "Node.js", "Express", "C#", "TFS", "Git"
+    "Javascript", "Backbone", "Angular 2", "React.js", "Grunt/Gulp", "Karma", "Node.js", 
+    "Express", "C#", "TFS", "Git"
+  ]
+});
+
+workHistory.push({
+  position: ".Net Sorfware Engineer",        date: { from: "Nov 2012", to: "Oct 2013" },
+  company: {
+    name:   "HP Inc.",
+    link:   "http://www.hp.com/",
+    team:   "HP FutureSmart / UI Team"
+  },  
+
+  details: `
+    LaserJet enterprise printer’s upgradable firmware user interface.
+
+    I worked as a C# developer in this team for around one year. It was a very large and
+    distributed program with more than 200 people involved from US, Brazil, and India.
+  `,
+
+  technologies: [
+    "C#", ".NET", "Windows Forms", "UML", "SNMP", "CruiseControl", "Git", 
+    "Visual Studio", "ALM", "MSBuild"
   ]
 });
 
@@ -187,6 +217,7 @@ certifications.push({
 
 
 (function buildHtml(){
+    let mainEl = document.querySelector("main");
 
     function buildLinks(text){
         let regex = /http(s)?\:[^\s]+/g;
@@ -196,13 +227,24 @@ certifications.push({
     }
 
     function appendRow(html){
-        let mainEl = document.querySelector("main");
         let el = document.createElement("div");
         el.classList.add("row");
         if (html){
             el.innerHTML = html;
         }
         mainEl.appendChild(el);
+    }
+
+    function appendPageBreak(){
+        let el = document.createElement("div");
+        el.classList.add("page-break");
+        mainEl.appendChild(el);
+    }
+
+    function createParagraphs(text){
+        let str = "";
+        text.split('\n\n').forEach(line => str += `<p>${line}</p>`);
+        return str;
     }
 
     function appendSubtitle(text, classStr){
@@ -212,12 +254,13 @@ certifications.push({
     // name and contact
     appendRow(`
         <h2 class="no-margin">${name}</h2>
-        <h5>${grad}</h5>
+        <h5>${job}</h5>
         <p>
             ${contact.map(buildLinks).join(" | ")}<br>
             ${pages.map(buildLinks).join('<br>')}
         </p>
-        <p>${summary}</p>
+        ${createParagraphs(summary)}
+        <p><em>Specialities: ${specialities}</em></p>
     `);
 
     // work history
@@ -226,7 +269,10 @@ certifications.push({
         appendRow(`
             <div class="eight columns">
                 <h5 class="no-margin">${job.position}</h5>
-                <p><a target="_blank" href="${job.company.link}">${job.company.name}</a></p>
+                <p>
+                    <a target="_blank" href="${job.company.link}">${job.company.name}</a>
+                    ${job.company.team ? (' - <em>' + job.company.team + '</em>') : ''} 
+                </p>
             </div>
             <div class="four columns text-right">
                 <h5>${job.date.from} - ${job.date.to}</h5>
@@ -240,7 +286,7 @@ certifications.push({
     });
 
     // education
-    appendSubtitle("Education", 'page-break');
+    appendSubtitle("Education");
     educationHistory.forEach(education => {
         appendRow(`
             <div class="eight columns">

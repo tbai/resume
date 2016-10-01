@@ -40,6 +40,8 @@ p {
         color: black;
         text-decoration: none;
     }
+    .row {page-break-inside: avoid;}
 }
+
 
 

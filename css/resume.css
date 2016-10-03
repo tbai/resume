@@ -23,6 +23,9 @@ p {
         page-break-before: always;
         margin-top: 4rem;
     } 
+    @page {
+        margin-top: 3cm;
+    }
     body {
         font-size:10px;
         line-height: 1.2;
@@ -30,17 +33,25 @@ p {
     h1, h2, h3, h4, h5, h6, p {
         margin-bottom: 1.2rem;
     }
-    h1 { font-size: 24px; }
-    h2 { font-size: 20px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
     h3 { font-size: 18px; }
     h4 { font-size: 16px; }
     h5 { font-size: 14px; }
     h6 { font-size: 12px; }
     a {
-        color: black;
+        color: darkgray;
+        font-style: italic;
         text-decoration: none;
     }
-    .row {page-break-inside: avoid;}
+    section {page-break-inside: avoid;}
+
+    .personal-name {
+        font-size: 24px;
+    }
+    .personal-title {
+        font-size: 16px;
+    }
 }
 
 

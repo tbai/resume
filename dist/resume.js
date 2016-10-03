@@ -13,7 +13,7 @@ var name = "TIAGO XAVIER BAI";
 var job = "Full-Stack Software Engineer";
 
 var contact = ["Sydney Australia", "+61280068908", "tiagoxbai@gmail.com"];
-var pages = ["https://au.linkedin.com/in/tiagobai"];
+var pages = ["https://www.linkedin.com/in/tiagobai", "http://resume.tiagobai.com", "https://github.com/tbai/resume/blob/gh-pages/js/resume.js"];
 
 var summary = "\n  I'm an experienced Full-Stack Engineer working with software development since \n  2004.\n\n  I started my career working with C and C++ development for embedded devices, \n  moved to Java building digital publishing solutions for HP R&D and, back in 2007, \n  I created my first JavaScript single page web application. Since that time \n  Front-End development and UX is a passion. I consider myself as a Full-Stack \n  engineer though since I can and have worked on every end of constructing a web \n  application, from AWS configuration to UX design and CSS polishing.\n\n  I'm also an experienced team leader and have worked as a technical leader on \n  several projects at HP and even had to work as a Project Manager in my latest \n  experience, although I'm proud to say that I never stopped writing code.\n";
 
@@ -131,6 +131,7 @@ certifications.push({
 
 (function buildHtml() {
   var mainEl = document.querySelector("main");
+  var currentSectionEl = null;
 
   function buildLinks(text) {
     var regex = /http(s)?\:[^\s]+/g;
@@ -139,19 +140,18 @@ certifications.push({
     });
   }
 
+  function appendSection() {
+    currentSectionEl = document.createElement("section");
+    mainEl.appendChild(currentSectionEl);
+  }
+
   function appendRow(html) {
     var el = document.createElement("div");
     el.classList.add("row");
     if (html) {
       el.innerHTML = html;
     }
-    mainEl.appendChild(el);
-  }
-
-  function appendPageBreak() {
-    var el = document.createElement("div");
-    el.classList.add("page-break");
-    mainEl.appendChild(el);
+    currentSectionEl.appendChild(el);
   }
 
   function createParagraphs(text) {
@@ -167,11 +167,13 @@ certifications.push({
   }
 
   // name and contact
-  appendRow("\n        <h2 class=\"no-margin\">" + name + "</h2>\n        <h5>" + job + "</h5>\n        <p>\n            " + contact.map(buildLinks).join(" | ") + "<br>\n            " + pages.map(buildLinks).join('<br>') + "\n        </p>\n        " + createParagraphs(summary) + "\n        <p><em>Specialities: " + specialities + "</em></p>\n    ");
+  appendSection();
+  appendRow("\n        <h2 class=\"no-margin personal-name\">" + name + "</h2>\n        <h5 class=\"personal-title\">" + job + "</h5>\n        <p>\n            " + contact.map(buildLinks).join(" | ") + "<br>\n            " + pages.map(buildLinks).join('<br>') + "\n        </p>\n        " + createParagraphs(summary) + "\n        <p><em>Specialities: " + specialities + "</em></p>\n    ");
 
   // work history
   appendSubtitle("Work History");
   workHistory.forEach(function (job, index) {
+    appendSection();
     appendRow("\n            <div class=\"eight columns\">\n                <h5 class=\"no-margin\">" + job.position + "</h5>\n                <p>\n                    <a target=\"_blank\" href=\"" + job.company.link + "\">" + job.company.name + "</a>\n                    " + (job.company.team ? ' - <em>' + job.company.team + '</em>' : '') + " \n                </p>\n            </div>\n            <div class=\"four columns text-right\">\n                <h5>" + job.date.from + " - " + job.date.to + "</h5>\n            </div>\n        ");
     job.details.split("\n\n").forEach(function (p) {
       return appendRow("<p>" + p + "</p>");
@@ -180,12 +182,14 @@ certifications.push({
   });
 
   // education
+  appendSection();
   appendSubtitle("Education");
   educationHistory.forEach(function (education) {
     appendRow("\n            <div class=\"eight columns\">\n                <h5 class=\"no-margin\">" + education.title + "</h5>\n                <p><a target=\"_blank\" href=\"" + education.university.link + "\">" + education.university.name + "</a></p>\n            </div>\n            <div class=\"four columns text-right\">\n                <h5>" + education.date.from + " - " + education.date.to + "</h5>\n            </div>\n        ");
   });
 
   // certifications
+  appendSection();
   appendSubtitle("Certifications");
   certifications.forEach(function (cert) {
     appendRow("\n            <div class=\"eight columns\">\n                <h5 class=\"no-margin\">" + cert.name + "</h5>\n                <p>" + cert.authority + "</p>\n            </div>\n            <div class=\"four columns text-right\">\n                <h5>" + cert.date + "</h5>\n            </div>\n        ");

@@ -14,7 +14,9 @@ let contact = [
     "Sydney Australia", "+61280068908", "tiagoxbai@gmail.com"
 ];
 let pages = [
-    "https://au.linkedin.com/in/tiagobai"
+    "https://www.linkedin.com/in/tiagobai",
+    "http://resume.tiagobai.com",
+    "https://github.com/tbai/resume/blob/gh-pages/js/resume.js"
 ];
 
 let summary = `
@@ -227,6 +229,7 @@ certifications.push({
 
 (function buildHtml(){
     let mainEl = document.querySelector("main");
+    let currentSectionEl = null;
 
     function buildLinks(text){
         let regex = /http(s)?\:[^\s]+/g;
@@ -235,19 +238,18 @@ certifications.push({
         });
     }
 
+    function appendSection(){
+        currentSectionEl = document.createElement("section");
+        mainEl.appendChild(currentSectionEl);
+    }
+
     function appendRow(html){
         let el = document.createElement("div");
         el.classList.add("row");
         if (html){
             el.innerHTML = html;
         }
-        mainEl.appendChild(el);
-    }
-
-    function appendPageBreak(){
-        let el = document.createElement("div");
-        el.classList.add("page-break");
-        mainEl.appendChild(el);
+        currentSectionEl.appendChild(el);
     }
 
     function createParagraphs(text){
@@ -260,10 +262,12 @@ certifications.push({
         appendRow(`<br><h3 class='no-margin ${classStr?classStr:''}'>${text}</h3><hr class='no-margin'><br>`);
     }
 
+    
     // name and contact
+    appendSection();
     appendRow(`
-        <h2 class="no-margin">${name}</h2>
-        <h5>${job}</h5>
+        <h2 class="no-margin personal-name">${name}</h2>
+        <h5 class="personal-title">${job}</h5>
         <p>
             ${contact.map(buildLinks).join(" | ")}<br>
             ${pages.map(buildLinks).join('<br>')}
@@ -275,6 +279,7 @@ certifications.push({
     // work history
     appendSubtitle("Work History");
     workHistory.forEach((job, index) => {
+        appendSection();
         appendRow(`
             <div class="eight columns">
                 <h5 class="no-margin">${job.position}</h5>
@@ -295,6 +300,7 @@ certifications.push({
     });
 
     // education
+    appendSection();
     appendSubtitle("Education");
     educationHistory.forEach(education => {
         appendRow(`
@@ -309,6 +315,7 @@ certifications.push({
     });
 
     // certifications
+    appendSection();
     appendSubtitle("Certifications");
     certifications.forEach(cert => {
         appendRow(`

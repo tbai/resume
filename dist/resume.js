@@ -59,7 +59,7 @@ workHistory.push({
     link: "http://www.tet.com.br/en/"
   },
 
-  details: "\n    Team leader and developer of a Web application designed to make it easy to\n    access and print large-format documents using a tablet, smartphone, laptop, or\n    printer touchscreen.\n\n    I was the main Front-End developer and the technical leader of the development\n    team. The project was owned by HP Barcelona where I had the opportunity to\n    visit to transfer the technology to a new business unit. My team had around 4\n    developers and we built the entire system from scratch since the investigation\n    phase until it went to production using agile and continuous deployment\n    techniques.\n  ",
+  details: "\n    Technical leader and Full-Stack developer of a web application designed to make \n    it easy to access and print large-format documents using a tablet, smartphone, \n    laptop, or printer touchscreen.\n\n    I worked on this project as a Full-Stack developer but I was the main responsible \n    for building the UI architecture and most of its features. The project was \n    sponsored by HP Barcelona where I had the opportunity to visit to transfer the \n    technology to a new business unit. My team had around 4 developers and we built \n    the entire system from scratch since the investigation phase until it went to \n    production using agile and continuous deployment techniques.\n  ",
 
   technologies: ["Grails(Java, Groovy)", "Javascript", "Jenkins", "AWS", "Linux", "Git", "SVN"]
 });
@@ -85,7 +85,7 @@ workHistory.push({
     link: "http://www.tet.com.br/en/"
   },
 
-  details: "\n    During this period I worked at two different R&D projects for HP Brazil.\n    Both projects were sponsored by HP Bristol.\n\n    * Development of single page web application for online document creation using\n      Javascript and Java\n\n    * Plugin development for InDesign\n  ",
+  details: "\n    During this period I worked at two different R&D projects for HP Brazil. Both \n    projects were sponsored by HP Bristol and we had regular meetings with them to \n    plan, provide feedback and discuss future developments.\n\n\n    * Development of single page web application from scratch for online document \n      creation using Javascript and Java in the back end.\n\n    * Plugin development for InDesign to add and edit custom content for digital \n      publishing purposes.\n  ",
   technologies: ["Java", "JSP", "Javascript", "YUI", "MooTools", "XML", "XSLT", "InDesign SDK", "C++", "CVS", "SVN"]
 });
 
@@ -97,8 +97,8 @@ workHistory.push({
     link: "http://www.pucrs.br/"
   },
 
-  details: "\n    Digital Documents Research in a partnership between HP Brazil and PUCRS university.\n  ",
-  technologies: ["Java", "Javascript"]
+  details: "\n    Digital Documents Research in a partnership between HP Brazil and PUCRS university.\n\n    This was my first contact with the development of web applications, during this \n    time I got to build, together with other two developers, a web application from \n    scratch with Java using JSP, Servlets, and Javascript on the client side. It was a \n    mapping solution to provide the directions to the university campus buildings. \n    Google maps did not exist by this time.\n  ",
+  technologies: ["Java", "Javascript", "HTML", "CSS", "Tomcat", "CVS"]
 });
 
 /**********************************************************************************/

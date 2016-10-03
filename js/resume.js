@@ -100,16 +100,16 @@ workHistory.push({
   }, 
 
   details: `
-    Team leader and developer of a Web application designed to make it easy to
-    access and print large-format documents using a tablet, smartphone, laptop, or
-    printer touchscreen.
+    Technical leader and Full-Stack developer of a web application designed to make 
+    it easy to access and print large-format documents using a tablet, smartphone, 
+    laptop, or printer touchscreen.
 
-    I was the main Front-End developer and the technical leader of the development
-    team. The project was owned by HP Barcelona where I had the opportunity to
-    visit to transfer the technology to a new business unit. My team had around 4
-    developers and we built the entire system from scratch since the investigation
-    phase until it went to production using agile and continuous deployment
-    techniques.
+    I worked on this project as a Full-Stack developer but I was the main responsible 
+    for building the UI architecture and most of its features. The project was 
+    sponsored by HP Barcelona where I had the opportunity to visit to transfer the 
+    technology to a new business unit. My team had around 4 developers and we built 
+    the entire system from scratch since the investigation phase until it went to 
+    production using agile and continuous deployment techniques.
   `,
 
   technologies: [
@@ -144,13 +144,16 @@ workHistory.push({
   }, 
 
   details: `
-    During this period I worked at two different R&D projects for HP Brazil.
-    Both projects were sponsored by HP Bristol.
+    During this period I worked at two different R&D projects for HP Brazil. Both 
+    projects were sponsored by HP Bristol and we had regular meetings with them to 
+    plan, provide feedback and discuss future developments.
 
-    * Development of single page web application for online document creation using
-      Javascript and Java
 
-    * Plugin development for InDesign
+    * Development of single page web application from scratch for online document 
+      creation using Javascript and Java in the back end.
+
+    * Plugin development for InDesign to add and edit custom content for digital 
+      publishing purposes.
   `,
   technologies: [
     "Java", "JSP", "Javascript", "YUI", "MooTools", "XML", "XSLT",
@@ -168,9 +171,15 @@ workHistory.push({
 
   details: `
     Digital Documents Research in a partnership between HP Brazil and PUCRS university.
+
+    This was my first contact with the development of web applications, during this 
+    time I got to build, together with other two developers, a web application from 
+    scratch with Java using JSP, Servlets, and Javascript on the client side. It was a 
+    mapping solution to provide the directions to the university campus buildings. 
+    Google maps did not exist by this time.
   `,
   technologies: [
-    "Java", "Javascript"
+    "Java", "Javascript", "HTML", "CSS", "Tomcat", "CVS"
   ]
 });
 

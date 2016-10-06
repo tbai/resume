@@ -73,7 +73,7 @@ workHistory.push({
 });
 
 workHistory.push({
-  position: ".Net Sorftware Engineer",        date: { from: "Nov 2012", to: "Oct 2013" },
+  position: ".Net Software Engineer",        date: { from: "Nov 2012", to: "Oct 2013" },
   company: {
     name:   "HP Inc.",
     link:   "http://www.hp.com/",

@@ -12,7 +12,7 @@ var name = "TIAGO XAVIER BAI";
 /**********************************************************************************/
 var job = "Full-Stack Software Engineer";
 
-var contact = ["Sydney Australia", "+61280068908", "tiagoxbai@gmail.com"];
+var contact = ["Sydney Australia", "0404 347 025", "tiagoxbai@gmail.com"];
 var pages = ["https://www.linkedin.com/in/tiagobai", "http://resume.tiagobai.com", "https://github.com/tbai/resume/blob/gh-pages/js/resume.js"];
 
 var summary = "\n  I'm an experienced Full-Stack Engineer working with software development since \n  2004.\n\n  I started my career working with C and C++ development for embedded devices, \n  moved to Java building digital publishing solutions for HP R&D and, back in 2007, \n  I created my first JavaScript single page web application. Since that time \n  Front-End development and UX is a passion. I consider myself as a Full-Stack \n  engineer though since I can and have worked on every end of constructing a web \n  application, from AWS configuration to UX design and CSS polishing.\n\n  I'm also an experienced team leader and have worked as a technical leader on \n  several projects at HP and even had to work as a Project Manager in my latest \n  experience, although I'm proud to say that I never stopped writing code.\n";

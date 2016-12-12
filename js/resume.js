@@ -33,6 +33,16 @@ let summary = `
   I'm also an experienced team leader and have worked as a technical leader on 
   several projects at HP and even had to work as a Project Manager in my latest 
   experience, although I'm proud to say that I never stopped writing code.
+
+  At work, I'm focused, competent, creative and have a real desire to see the 
+  result of my work being used and considered useful. I'm also constantly looking 
+  to the latest technologies and practices related to web and software development 
+  in general.
+
+  I'm looking for Senior Front-End or Full-Stack Software Engineer positions in 
+  Sydney. I have a permanent resident visa and I don't mind about the size of the 
+  company as long as it has a good and friendly environment, focus on user 
+  experience and innovation. 
 `;
 
 let specialities = `

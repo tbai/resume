@@ -11,7 +11,7 @@ let name = "TIAGO XAVIER BAI";
 let job = "Full-Stack Software Engineer";
 
 let contact = [ 
-    "Sydney Australia", "+61280068908", "tiagoxbai@gmail.com"
+    "Sydney Australia", "0404 347 025", "tiagoxbai@gmail.com"
 ];
 let pages = [
     "https://www.linkedin.com/in/tiagobai",

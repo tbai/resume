@@ -11,12 +11,12 @@ const name = "TIAGO XAVIER BAI";
 const job = "Full-Stack Software Engineer";
 
 const contact = [ 
-    "Sydney Australia", "0404 347 025", "tiagoxbai@gmail.com"
+  "Sydney Australia", "0404 347 025", "tiagoxbai@gmail.com"
 ];
 const pages = [
-    "https://www.linkedin.com/in/tiagobai",
-    "http://resume.tiagobai.com",
-    "https://github.com/tbai/resume/blob/gh-pages/js/resume.js"
+  "https://www.linkedin.com/in/tiagobai",
+  "http://resume.tiagobai.com",
+  "https://github.com/tbai/resume/blob/gh-pages/js/resume.js"
 ];
 
 const summary = `

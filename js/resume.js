@@ -6,20 +6,20 @@
  */
 
 /**********************************************************************************/
-let name = "TIAGO XAVIER BAI"; 
+const name = "TIAGO XAVIER BAI"; 
 /**********************************************************************************/
-let job = "Full-Stack Software Engineer";
+const job = "Full-Stack Software Engineer";
 
-let contact = [ 
+const contact = [ 
     "Sydney Australia", "0404 347 025", "tiagoxbai@gmail.com"
 ];
-let pages = [
+const pages = [
     "https://www.linkedin.com/in/tiagobai",
     "http://resume.tiagobai.com",
     "https://github.com/tbai/resume/blob/gh-pages/js/resume.js"
 ];
 
-let summary = `
+const summary = `
   I'm an experienced Full-Stack Engineer working with software development since 
   2004.
 
@@ -39,27 +39,46 @@ let summary = `
   to the latest technologies and practices related to web and software development 
   in general.
 
-  I'm looking for Senior Front-End or Full-Stack Software Engineer positions in 
-  Sydney. I have a permanent resident visa and I don't mind about the size of the 
-  company as long as it has a good and friendly environment, focus on user 
-  experience and innovation. 
+  I have a PR visa and I'm seeking for contract positions as a Senior Front-End or 
+  Full-Stack Software Engineer in Sydney, either building new web applications with
+  a great focus on user experience or native Android apps.
 `;
 
-let specialities = `
-    Javascript (Angular 2, Reactjs, Redux, karma, node.js, mongodb, express, grunt, 
-    backbone, marionette...), Java, C, C++, C#, Web Development (Grails, Django, 
-    .Net...),  Linux...
+const specialities = `
+  Javascript (Angular 2+, Reactjs, Redux, node.js, mongodb, express, backbone...), 
+  Kotlin, Java, C, C++, C#, Web Development (Grails, Django, .Net...), Linux...
 `;
 
 
 /**********************************************************************************/
 // WORK HISTORY
 /**********************************************************************************/
-let workHistory = [];
+const workHistory = [];
+
+// Skyfii
+workHistory.push({
+  position: "Senior Front-End Engineer",   date: { from: "Jan 2017", to: "Current" },
+  company: {
+    name:   "Skyfii.io",
+    link:   "http://skyfii.io/"
+  },  
+
+  details: `
+    Australian company provider of venue data analytics and marketing tools.
+
+    Worked mostly on the development of new features for the web platform and 
+    creating personalized WiFi Portal websites. The web platform was build using
+    an Angular 1.x stack in the front-end and Spring with Scala in the back-end.
+  `,
+
+  technologies: [
+    "Javascript", "Angular 1", "Webpack", "Scala", "Spring", "Git"
+  ]
+});
 
 // HP Inc.
 workHistory.push({
-  position: "Lead Front-End Engineer",        date: { from: "Nov 2013", to: "Sep 2016" },
+  position: "Lead Front-End Engineer",    date: { from: "Nov 2013", to: "Sep 2016" },
   company: {
     name:   "HP Inc.",
     link:   "http://www.hp.com/",
@@ -77,13 +96,13 @@ workHistory.push({
   `,
 
   technologies: [
-    "Javascript", "Backbone", "Angular 2", "React.js", "Grunt/Gulp", "Karma", "Node.js", 
-    "Express", "C#", "TFS", "Git"
+    "Javascript", "Typescript", "Backbone", "Angular 2", "React.js", "Grunt/Gulp",
+    "Karma", "Node.js", "Express", "C#", "TFS", "Git"
   ]
 });
 
 workHistory.push({
-  position: ".Net Software Engineer",        date: { from: "Nov 2012", to: "Oct 2013" },
+  position: ".Net Software Engineer",     date: { from: "Nov 2012", to: "Oct 2013" },
   company: {
     name:   "HP Inc.",
     link:   "http://www.hp.com/",
@@ -93,8 +112,9 @@ workHistory.push({
   details: `
     LaserJet enterprise printer’s upgradable firmware user interface.
 
-    I worked as a C# developer in this team for around one year. It was a very large and
-    distributed program with more than 200 people involved from US, Brazil, and India.
+    I worked as a C# developer in this team for around one year. It was a very large 
+    and distributed program with more than 200 people involved from US, Brazil, and 
+    India.
   `,
 
   technologies: [
@@ -105,7 +125,7 @@ workHistory.push({
 
 // T&T Engenheiros Associados | HP contractor
 workHistory.push({
-  position: "Senior Software Engineer",  date: { from: "Jun 2009", to: "Oct 2012" },
+  position: "Senior Software Engineer",   date: { from: "Jun 2009", to: "Oct 2012" },
   company: {
     name:   "T&T Engenheiros Associados (HP contractor)",
     link:   "http://www.tet.com.br/en/"
@@ -131,7 +151,7 @@ workHistory.push({
 
 // Perto S.A.
 workHistory.push({
-  position: "Senior Software Engineer",  date: { from: "Feb 2009", to: "May 2009" },
+  position: "Senior Software Engineer",   date: { from: "Feb 2009", to: "May 2009" },
   company: {
     name:   "Perto S.A.",
     link:   "http://www.perto.com.br/en/"
@@ -149,7 +169,7 @@ workHistory.push({
 
 // T&T Engenheiros Associados | HP contractor
 workHistory.push({
-  position: "Software Engineer",         date: { from: "May 2006", to: "Feb 2009" },
+  position: "Software Engineer",          date: { from: "May 2006", to: "Feb 2009" },
   company: {
     name:   "T&T Engenheiros Associados (HP contractor)",
     link:   "http://www.tet.com.br/en/"
@@ -175,7 +195,7 @@ workHistory.push({
 
 // PUCRS
 workHistory.push({
-  position: "Intern Software Engineer",  date: { from: "Mar 2004", to: "May 2006" },
+  position: "Intern Software Engineer",   date: { from: "Mar 2004", to: "May 2006" },
   company: {
     name:   "PUCRS university (HP research project)",
     link:   "http://www.pucrs.br/"
@@ -186,9 +206,9 @@ workHistory.push({
 
     This was my first contact with the development of web applications, during this 
     time I got to build, together with other two developers, a web application from 
-    scratch with Java using JSP, Servlets, and Javascript on the client side. It was a 
-    mapping solution to provide the directions to the university campus buildings. 
-    Google maps did not exist by this time.
+    scratch with Java using JSP, Servlets, and Javascript on the client side. It was
+    a mapping solution to provide the directions to the university campus buildings. 
+    Google maps did not exist by that time.
   `,
   technologies: [
     "Java", "Javascript", "HTML", "CSS", "Tomcat", "CVS"
@@ -199,7 +219,7 @@ workHistory.push({
 /**********************************************************************************/
 // EDUCATION
 /**********************************************************************************/
-let educationHistory = [];
+const educationHistory = [];
 
 educationHistory.push({
   title:      "Computer Engineer",       date: { from: "Jan 2003", to: "Jan 2008" },
@@ -213,7 +233,7 @@ educationHistory.push({
 /**********************************************************************************/
 // CERTIFICATIONS
 /**********************************************************************************/
-let certifications = [];
+const certifications = [];
 certifications.push({
   name:      "Scrum Product Owner",                                    date: "2015",
   authority: "SCRUM ALLIANCE"
@@ -231,18 +251,12 @@ certifications.push({
 /**********************************************************************************/
 /**********************************************************************************/
 
-
-
-
-
-
-
 (function buildHtml(){
-    let mainEl = document.querySelector("main");
-    let currentSectionEl = null;
+    const mainEl = document.querySelector("main");
+    let currentSectionEl;
 
     function buildLinks(text){
-        let regex = /http(s)?\:[^\s]+/g;
+        const regex = /http(s)?\:[^\s]+/g;
         return text.replace(regex, match => {
             return `<a href="${match}" target="_blank">${match}</a>`;
         });
@@ -254,7 +268,7 @@ certifications.push({
     }
 
     function appendRow(html){
-        let el = document.createElement("div");
+        const el = document.createElement("div");
         el.classList.add("row");
         if (html){
             el.innerHTML = html;
@@ -271,7 +285,6 @@ certifications.push({
     function appendSubtitle(text, classStr){
         appendRow(`<br><h3 class='no-margin ${classStr?classStr:''}'>${text}</h3><hr class='no-margin'><br>`);
     }
-
     
     // name and contact
     appendSection();
@@ -338,8 +351,5 @@ certifications.push({
             </div>
         `);
     });
-    
 
-    
-
-})();
+  })();

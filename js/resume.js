@@ -11,7 +11,7 @@ const name = "TIAGO XAVIER BAI";
 const job = "Full-Stack Software Engineer";
 
 const contact = [ 
-  "Sydney Australia", "0404 347 025", "tiagoxbai@gmail.com"
+  "Sydney Australia", "tiagoxbai@gmail.com"
 ];
 const pages = [
   "https://www.linkedin.com/in/tiagobai",
@@ -38,10 +38,6 @@ const summary = `
   result of my work being used and considered useful. I'm also constantly looking 
   to the latest technologies and practices related to web and software development 
   in general.
-
-  I have a PR visa and I'm seeking for contract positions as a Senior Front-End or 
-  Full-Stack Software Engineer in Sydney, either building new web applications with
-  a great focus on user experience or native Android apps.
 `;
 
 const specialities = `
